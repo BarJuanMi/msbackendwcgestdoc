@@ -39,6 +39,7 @@ app.use(express.static('public'));
 
 //Rutas
 app.use('/api/retiros', require('./routes/retiros.route'));
+app.use('/api/ausentismos', require('./routes/ausentismos.route'));
 
 app.listen(process.env.PORT, () => {
     console.log('Servidor corriendo en puerto ' + process.env.PORT);
